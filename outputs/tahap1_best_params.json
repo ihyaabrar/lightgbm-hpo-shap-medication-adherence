@@ -1,0 +1,65 @@
+{
+  "Baseline": {},
+  "Grid Search": {
+    "learning_rate": 0.01,
+    "max_depth": -1.0,
+    "min_child_samples": 50.0,
+    "n_estimators": 300.0,
+    "num_leaves": 31.0
+  },
+  "Random Search": {
+    "colsample_bytree": 0.5324461235544908,
+    "learning_rate": 0.01275726949987024,
+    "max_depth": 9.0,
+    "min_child_samples": 6.0,
+    "n_estimators": 486.0,
+    "num_leaves": 127.0,
+    "reg_alpha": 2.1517032190107035e-07,
+    "reg_lambda": 9.542548269555452,
+    "subsample": 0.6333905071376424
+  },
+  "Halving": {
+    "colsample_bytree": 0.6482799561029653,
+    "learning_rate": 0.06974617167386978,
+    "max_depth": 7.0,
+    "min_child_samples": 69.0,
+    "n_estimators": 290.0,
+    "num_leaves": 231.0,
+    "reg_alpha": 3.538368528884488e-07,
+    "reg_lambda": 5.646508566522173,
+    "subsample": 0.7244068228733029
+  },
+  "Optuna TPE": {
+    "n_estimators": 824.0,
+    "learning_rate": 0.006198928491234263,
+    "max_depth": 10.0,
+    "num_leaves": 49.0,
+    "min_child_samples": 86.0,
+    "subsample": 0.7424854810677135,
+    "colsample_bytree": 0.6616904419437958,
+    "reg_alpha": 0.3915330318151539,
+    "reg_lambda": 5.062415318761385e-07
+  },
+  "Hyperopt TPE": {
+    "n_estimators": 242.0,
+    "learning_rate": 0.013533381907262547,
+    "max_depth": 11.0,
+    "num_leaves": 31.0,
+    "min_child_samples": 55.0,
+    "subsample": 0.50080883361782,
+    "colsample_bytree": 0.7783615824457245,
+    "reg_alpha": 1.0415181798171622e-08,
+    "reg_lambda": 0.09406865383691376
+  },
+  "scikit-optimize GP": {
+    "colsample_bytree": 0.5,
+    "learning_rate": 0.005,
+    "max_depth": 12.0,
+    "min_child_samples": 28.0,
+    "n_estimators": 788.0,
+    "num_leaves": 50.0,
+    "reg_alpha": 0.23681099369091752,
+    "reg_lambda": 5.187644779801708e-08,
+    "subsample": 0.9517811571353634
+  }
+}

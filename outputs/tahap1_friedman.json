@@ -1,0 +1,14 @@
+{
+  "chi2": 9.127071823204414,
+  "p": 0.16655675576548365,
+  "CD": 2.8490046683008434,
+  "mean_ranks": {
+    "Baseline": 5.1,
+    "Grid Search": 5.15,
+    "Random Search": 2.95,
+    "Halving": 3.75,
+    "Optuna TPE": 3.75,
+    "Hyperopt TPE": 3.9,
+    "scikit-optimize GP": 3.4
+  }
+}
