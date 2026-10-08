@@ -1,4 +1,4 @@
-# Comparison of Hyperparameter Optimization Methods and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Disease Patients
+# Comparison of Hyperparameter Optimization and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Diseases
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23227735.svg)](https://doi.org/10.5281/zenodo.23227735)
 
@@ -7,7 +7,7 @@ Code, executed notebook, data and results for a master's thesis in Informatics a
 **Author:** Ihya' Nashirudin Abrar
 **Supervisors:** Dr. Eng. Ir. Muhammad Kunta Biddinika, S.T., M.Eng. · Ir. Herman Yuliansyah, S.T., M.Eng., Ph.D.
 
-*Original thesis title (Indonesian): Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular.*
+*Original thesis title (Indonesian): Perbandingan Optimasi Hiperparameter dan Interpretasi SHAP LightGBM untuk Prediksi Kepatuhan Pengobatan Penyakit Tidak Menular.*
 
 ---
 
@@ -94,7 +94,7 @@ Kanyongo, W. (2024). *Dataset for Analysing Medication Adherence among Diabetes 
 
 If you use this code, please cite the Zenodo archive (see also `CITATION.cff`):
 
-> Abrar, I. N. (2026). *Comparison of Hyperparameter Optimization Methods and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Disease Patients: Code and Results* [Software]. Zenodo. https://doi.org/10.5281/zenodo.23227735
+> Abrar, I. N. (2026). *Comparison of Hyperparameter Optimization and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Diseases: Code and Results* [Software]. Zenodo. https://doi.org/10.5281/zenodo.23227735
 
 ## Licence
 
