@@ -1,0 +1,225 @@
+{
+  "class_weight": {
+    "tanpa_bobot": {
+      "holdout": {
+        "accuracy": 0.8201453790238837,
+        "precision_w": 0.8318745541864087,
+        "f1_w": 0.821784077253071,
+        "mcc": 0.6433252284851196,
+        "auc": 0.9042948720479754,
+        "recall_non_adherent": 0.7896563693162096,
+        "recall_adherent": 0.8655635987590486,
+        "tn": 2275,
+        "fp": 606,
+        "fn": 260,
+        "tp": 1674
+      },
+      "cv10": {
+        "acc_mean": 0.8240560747663552,
+        "acc_std": 0.00850433191339627,
+        "mcc_mean": 0.6476637110093068,
+        "mcc_std": 0.016811804614490184
+      }
+    },
+    "balanced": {
+      "holdout": {
+        "accuracy": 0.8159916926272066,
+        "precision_w": 0.8429448557380438,
+        "f1_w": 0.817694467307678,
+        "mcc": 0.6538962939474094,
+        "auc": 0.9045971053800047,
+        "recall_non_adherent": 0.7459215550156196,
+        "recall_adherent": 0.9203722854188211,
+        "tn": 2149,
+        "fp": 732,
+        "fn": 154,
+        "tp": 1780
+      },
+      "cv10": {
+        "acc_mean": 0.8189145122789983,
+        "acc_std": 0.008708374433064886,
+        "mcc_mean": 0.6545574384297757,
+        "mcc_std": 0.015731192653053092
+      }
+    }
+  },
+  "ablasi": {
+    "Model final (17 fitur)": {
+      "jumlah_fitur": 17,
+      "fitur": [
+        "AGE",
+        "ANNUALCONTRIBUTION",
+        "ANNUALCLAIMAMOUNT",
+        "UNITSTOTAL",
+        "GENDER_M",
+        "SCHEMETYPE_MEDIUM",
+        "SCHEMETYPE_PREMIUM",
+        "DIAGNOSIS_HYPERTENSION",
+        "COVERTYPE_STANDARD",
+        "COMORBIDITY_NO_COMORBIDITY",
+        "COMPLICATIONDEVELOPMENT_NO_COMPLICATION",
+        "LOG_CLAIM",
+        "LOG_UNITS",
+        "LOG_CONTRIB",
+        "CLAIM_PER_UNIT",
+        "CLAIM_RATIO",
+        "UNITS_PER_AGE"
+      ],
+      "holdout": {
+        "accuracy": 0.8201453790238837,
+        "precision_w": 0.8318745541864087,
+        "f1_w": 0.821784077253071,
+        "mcc": 0.6433252284851196,
+        "auc": 0.9042948720479754,
+        "recall_non_adherent": 0.7896563693162096,
+        "recall_adherent": 0.8655635987590486,
+        "tn": 2275,
+        "fp": 606,
+        "fn": 260,
+        "tp": 1674
+      }
+    },
+    "Tanpa UNITSTOTAL, LOG_UNITS, UNITS_PER_AGE": {
+      "jumlah_fitur": 14,
+      "fitur": [
+        "AGE",
+        "ANNUALCONTRIBUTION",
+        "ANNUALCLAIMAMOUNT",
+        "GENDER_M",
+        "SCHEMETYPE_MEDIUM",
+        "SCHEMETYPE_PREMIUM",
+        "DIAGNOSIS_HYPERTENSION",
+        "COVERTYPE_STANDARD",
+        "COMORBIDITY_NO_COMORBIDITY",
+        "COMPLICATIONDEVELOPMENT_NO_COMPLICATION",
+        "LOG_CLAIM",
+        "LOG_CONTRIB",
+        "CLAIM_PER_UNIT",
+        "CLAIM_RATIO"
+      ],
+      "holdout": {
+        "accuracy": 0.8151609553478713,
+        "precision_w": 0.8276718227996349,
+        "f1_w": 0.816871146907494,
+        "mcc": 0.634126576264347,
+        "auc": 0.8989151546325514,
+        "recall_non_adherent": 0.7830614370010414,
+        "recall_adherent": 0.8629782833505688,
+        "tn": 2256,
+        "fp": 625,
+        "fn": 265,
+        "tp": 1669
+      }
+    },
+    "Tanpa seluruh turunan unit (+ CLAIM_PER_UNIT)": {
+      "jumlah_fitur": 13,
+      "fitur": [
+        "AGE",
+        "ANNUALCONTRIBUTION",
+        "ANNUALCLAIMAMOUNT",
+        "GENDER_M",
+        "SCHEMETYPE_MEDIUM",
+        "SCHEMETYPE_PREMIUM",
+        "DIAGNOSIS_HYPERTENSION",
+        "COVERTYPE_STANDARD",
+        "COMORBIDITY_NO_COMORBIDITY",
+        "COMPLICATIONDEVELOPMENT_NO_COMPLICATION",
+        "LOG_CLAIM",
+        "LOG_CONTRIB",
+        "CLAIM_RATIO"
+      ],
+      "holdout": {
+        "accuracy": 0.7580477673935618,
+        "precision_w": 0.7689284349188503,
+        "f1_w": 0.7601746262278342,
+        "mcc": 0.5145641484618046,
+        "auc": 0.8386928300705654,
+        "recall_non_adherent": 0.7424505380076363,
+        "recall_adherent": 0.781282316442606,
+        "tn": 2139,
+        "fp": 742,
+        "fn": 423,
+        "tp": 1511
+      }
+    },
+    "Hanya UNITSTOTAL": {
+      "jumlah_fitur": 1,
+      "fitur": [
+        "UNITSTOTAL"
+      ],
+      "holdout": {
+        "accuracy": 0.7968847352024923,
+        "precision_w": 0.8144764403295334,
+        "f1_w": 0.7988637545265063,
+        "mcc": 0.6033458480788146,
+        "auc": 0.8734732640158913,
+        "recall_non_adherent": 0.7528635890315862,
+        "recall_adherent": 0.8624612202688728,
+        "tn": 2169,
+        "fp": 712,
+        "fn": 266,
+        "tp": 1668
+      }
+    }
+  },
+  "baseline_vs_final": {
+    "baseline": {
+      "accuracy": 0.8199376947040499,
+      "precision_w": 0.8319325276447721,
+      "f1_w": 0.8215877143793976,
+      "mcc": 0.643248625793804,
+      "auc": 0.903594387074751,
+      "recall_non_adherent": 0.7886150642138147,
+      "recall_adherent": 0.8665977249224406,
+      "tn": 2272,
+      "fp": 609,
+      "fn": 258,
+      "tp": 1676
+    },
+    "final": {
+      "accuracy": 0.8201453790238837,
+      "precision_w": 0.8318745541864087,
+      "f1_w": 0.821784077253071,
+      "mcc": 0.6433252284851196,
+      "auc": 0.9042948720479754,
+      "recall_non_adherent": 0.7896563693162096,
+      "recall_adherent": 0.8655635987590486,
+      "tn": 2275,
+      "fp": 606,
+      "fn": 260,
+      "tp": 1674
+    },
+    "bootstrap_B": 2000,
+    "ci95": {
+      "final_acc": [
+        0.8099688473520249,
+        0.8307372793354102
+      ],
+      "final_mcc": [
+        0.6232182813604166,
+        0.6638069854810739
+      ],
+      "final_auc": [
+        0.8959796080132688,
+        0.9125423170625674
+      ],
+      "d_acc": [
+        -0.004361370716510882,
+        0.0047767393561786164
+      ],
+      "d_mcc": [
+        -0.009079000911577826,
+        0.009466882097022376
+      ],
+      "d_auc": [
+        -0.0010833411034880613,
+        0.0025273732394608113
+      ]
+    },
+    "mcnemar": {
+      "final_benar_baseline_salah": 67,
+      "final_salah_baseline_benar": 66,
+      "p_value": 1.0
+    }
+  }
+}
