@@ -1,0 +1,37 @@
+{
+  "title": "Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular — Kode dan Hasil Eksperimen",
+  "description": "<p>Kode, notebook yang telah dieksekusi, dataset, figur, dan hasil numerik untuk tesis Magister Informatika Universitas Ahmad Dahlan (2026).</p><p>Penelitian membandingkan enam metode optimasi hiperparameter pada LightGBM (Grid Search, Random Search, Halving Random Search, Optuna-TPE, Hyperopt-TPE, scikit-optimize-GP) dengan uji Friedman dan post hoc Nemenyi, menafsirkan model final dengan SHAP empat level, dan menguji kekokohan temuan melalui analisis sensitivitas (pembobotan kelas, ablasi fitur, baseline vs final dengan bootstrap dan uji McNemar). Data: 24.084 rekaman klaim pasien diabetes dan hipertensi Cimas Medical Aid Society, Zimbabwe.</p><p><em>English: Code and results for a master's thesis comparing six hyperparameter optimization methods and SHAP interpretation of LightGBM for medication adherence prediction in non-communicable disease patients.</em></p>",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Abrar, Ihya' Nashirudin",
+      "affiliation": "Universitas Ahmad Dahlan"
+    }
+  ],
+  "license": "MIT",
+  "language": "ind",
+  "keywords": [
+    "LightGBM",
+    "hyperparameter optimization",
+    "SHAP",
+    "explainable AI",
+    "medication adherence",
+    "non-communicable disease",
+    "Friedman test",
+    "Nemenyi"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/zkp7sbbx64.2",
+      "relation": "requires",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.3724/2096-7004.di.2024.0037",
+      "relation": "references",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ]
+}
