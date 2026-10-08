@@ -1,6 +1,6 @@
 {
   "class_weight": {
-    "tanpa_bobot": {
+    "unweighted": {
       "holdout": {
         "accuracy": 0.8201453790238837,
         "precision_w": 0.8318745541864087,
@@ -43,10 +43,10 @@
       }
     }
   },
-  "ablasi": {
-    "Model final (17 fitur)": {
-      "jumlah_fitur": 17,
-      "fitur": [
+  "ablation": {
+    "Final model (17 features)": {
+      "n_features": 17,
+      "features": [
         "AGE",
         "ANNUALCONTRIBUTION",
         "ANNUALCLAIMAMOUNT",
@@ -79,9 +79,9 @@
         "tp": 1674
       }
     },
-    "Tanpa UNITSTOTAL, LOG_UNITS, UNITS_PER_AGE": {
-      "jumlah_fitur": 14,
-      "fitur": [
+    "Without UNITSTOTAL, LOG_UNITS, UNITS_PER_AGE": {
+      "n_features": 14,
+      "features": [
         "AGE",
         "ANNUALCONTRIBUTION",
         "ANNUALCLAIMAMOUNT",
@@ -111,9 +111,9 @@
         "tp": 1669
       }
     },
-    "Tanpa seluruh turunan unit (+ CLAIM_PER_UNIT)": {
-      "jumlah_fitur": 13,
-      "fitur": [
+    "Without all unit-derived features (+ CLAIM_PER_UNIT)": {
+      "n_features": 13,
+      "features": [
         "AGE",
         "ANNUALCONTRIBUTION",
         "ANNUALCLAIMAMOUNT",
@@ -142,9 +142,9 @@
         "tp": 1511
       }
     },
-    "Hanya UNITSTOTAL": {
-      "jumlah_fitur": 1,
-      "fitur": [
+    "UNITSTOTAL only": {
+      "n_features": 1,
+      "features": [
         "UNITSTOTAL"
       ],
       "holdout": {
@@ -217,8 +217,8 @@
       ]
     },
     "mcnemar": {
-      "final_benar_baseline_salah": 67,
-      "final_salah_baseline_benar": 66,
+      "final_right_baseline_wrong": 67,
+      "final_wrong_baseline_right": 66,
       "p_value": 1.0
     }
   }
