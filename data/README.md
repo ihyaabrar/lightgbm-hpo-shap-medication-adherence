@@ -1,28 +1,28 @@
 # Data
 
-**Berkas:** `Final Prepared Dataset - Diabetes and Hypertension Data.xlsx` (24.084 baris × 12 kolom)
+**File:** `Final Prepared Dataset - Diabetes and Hypertension Data.xlsx` (24,084 rows × 12 columns)
 
-**Sumber:** Kanyongo, W. (2024). *Dataset for Analysing Medication Adherence among Diabetes and Hypertension Patients: Patient-Level and Medication Refill Data* (Version 2) [Data set]. Mendeley Data. https://doi.org/10.17632/zkp7sbbx64.2
+**Source:** Kanyongo, W. (2024). *Dataset for Analysing Medication Adherence among Diabetes and Hypertension Patients: Patient-Level and Medication Refill Data* (Version 2) [Data set]. Mendeley Data. https://doi.org/10.17632/zkp7sbbx64.2
 
-**Lisensi:** CC0 1.0 (*Public Domain Dedication*). Berkas disertakan apa adanya untuk reprodusibilitas.
+**Licence:** CC0 1.0 (Public Domain Dedication). The file is included unchanged for reproducibility.
 
-Proses *data wrangling* asal dijelaskan dalam:
+The original data-wrangling process is described in:
 Kanyongo, W., Ezugwu, A. E. S., Moyo, T., & Dombeu, J. V. F. (2025). Data Wrangling and Generation for Machine Learning Models in Medication Adherence Analytics. *Data Intelligence*, 7(2), 485–526. https://doi.org/10.3724/2096-7004.di.2024.0037
 
-## Variabel
+## Variables
 
-| Variabel | Tipe | Keterangan |
+| Variable | Type | Description |
 |---|---|---|
-| AGE | Numerik | Usia pasien (tahun) |
-| ANNUALCONTRIBUTION | Numerik | Kontribusi tahunan ke skema asuransi |
-| ANNUALCLAIMAMOUNT | Numerik | Total klaim tahunan |
-| UNITSTOTAL | Numerik | Total unit yang diklaim |
-| GENDER_M | Biner | 1 = laki-laki |
-| SCHEMETYPE_MEDIUM / SCHEMETYPE_PREMIUM | Biner | Tipe skema asuransi |
-| DIAGNOSIS_HYPERTENSION | Biner | 1 = hipertensi, 0 = diabetes |
-| COVERTYPE_STANDARD | Biner | Tipe pertanggungan Standard |
-| COMORBIDITY_NO_COMORBIDITY | Biner | 1 = tanpa komorbiditas |
-| COMPLICATIONDEVELOPMENT_NO_COMPLICATION | Biner | 1 = tanpa perkembangan komplikasi |
-| **ADHERENCE** | Target | **ADHERENT**: *refill* obat 9–12 kali dalam 12 bulan (≥ 75%); **NON-ADHERENT**: 1–8 kali |
+| AGE | Numeric | Patient age (years) |
+| ANNUALCONTRIBUTION | Numeric | Annual contribution to the insurance scheme |
+| ANNUALCLAIMAMOUNT | Numeric | Total annual claim amount |
+| UNITSTOTAL | Numeric | Total claimed units |
+| GENDER_M | Binary | 1 = male |
+| SCHEMETYPE_MEDIUM / SCHEMETYPE_PREMIUM | Binary | Insurance scheme type |
+| DIAGNOSIS_HYPERTENSION | Binary | 1 = hypertension, 0 = diabetes |
+| COVERTYPE_STANDARD | Binary | Standard cover type |
+| COMORBIDITY_NO_COMORBIDITY | Binary | 1 = no comorbidity |
+| COMPLICATIONDEVELOPMENT_NO_COMPLICATION | Binary | 1 = no complications developed |
+| **ADHERENCE** | Target | **ADHERENT**: 9–12 medication refills in 12 months (≥ 75%); **NON-ADHERENT**: 1–8 refills |
 
-Catatan: label ADHERENCE dan `UNITSTOTAL` sama-sama diturunkan dari data klaim yang sama. Implikasinya diuji melalui analisis ablasi pada Bagian 9 notebook.
+Note: the ADHERENCE label and `UNITSTOTAL` are both derived from the same claims data. The implications are tested with an ablation analysis in Part 9 of the notebook.

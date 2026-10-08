@@ -1,6 +1,7 @@
 {
-  "title": "Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular — Kode dan Hasil Eksperimen",
-  "description": "<p>Kode, notebook yang telah dieksekusi, dataset, figur, dan hasil numerik untuk tesis Magister Informatika Universitas Ahmad Dahlan (2026).</p><p>Penelitian membandingkan enam metode optimasi hiperparameter pada LightGBM (Grid Search, Random Search, Halving Random Search, Optuna-TPE, Hyperopt-TPE, scikit-optimize-GP) dengan uji Friedman dan post hoc Nemenyi, menafsirkan model final dengan SHAP empat level, dan menguji kekokohan temuan melalui analisis sensitivitas (pembobotan kelas, ablasi fitur, baseline vs final dengan bootstrap dan uji McNemar). Data: 24.084 rekaman klaim pasien diabetes dan hipertensi Cimas Medical Aid Society, Zimbabwe.</p><p><em>English: Code and results for a master's thesis comparing six hyperparameter optimization methods and SHAP interpretation of LightGBM for medication adherence prediction in non-communicable disease patients.</em></p>",
+  "title": "Comparison of Hyperparameter Optimization Methods and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Disease Patients: Code and Results",
+  "description": "<p>Code, executed Jupyter notebook, data, figures and numerical results for a master's thesis in Informatics at Universitas Ahmad Dahlan, Indonesia (2026).</p><p>The study compares six hyperparameter optimization methods for LightGBM (Grid Search, Random Search, Halving Random Search, Optuna-TPE, Hyperopt-TPE and scikit-optimize-GP) using the Friedman test with the Nemenyi post hoc test. It explains the final model with four-level SHAP analysis and checks the robustness of the findings with a sensitivity analysis (class weighting, claim-unit feature ablation, and baseline vs final model with bootstrap confidence intervals and McNemar's test). Data: 24,084 insurance-claim records of diabetes and hypertension patients from Cimas Medical Aid Society, Zimbabwe.</p><p>Main findings: the highest mean 10-fold CV accuracy was 0.8241 (Random Search), with no significant difference between methods (Friedman p = 0.167). The final model reached accuracy 0.8201, MCC 0.6433 and AUC-ROC 0.9043 on the test set but did not differ from LightGBM's default configuration (McNemar p = 1.000). UNITSTOTAL had the largest SHAP contribution.</p>",
+  "notes": "Original thesis title (Indonesian): Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular.",
   "upload_type": "software",
   "creators": [
     {
@@ -9,7 +10,7 @@
     }
   ],
   "license": "MIT",
-  "language": "ind",
+  "language": "eng",
   "keywords": [
     "LightGBM",
     "hyperparameter optimization",
@@ -18,7 +19,7 @@
     "medication adherence",
     "non-communicable disease",
     "Friedman test",
-    "Nemenyi"
+    "Nemenyi test"
   ],
   "related_identifiers": [
     {

@@ -1,22 +1,26 @@
 cff-version: 1.2.0
-message: "Jika memakai kode ini, silakan sitasi tesis berikut."
-title: "Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular"
+message: "If you use this code, please cite it as below."
+title: "Comparison of Hyperparameter Optimization Methods and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Disease Patients: Code and Results"
 authors:
   - family-names: "Abrar"
     given-names: "Ihya' Nashirudin"
     affiliation: "Universitas Ahmad Dahlan"
 type: software
+version: 1.1.0
+doi: 10.5281/zenodo.23227735
 license: MIT
+repository-code: "https://github.com/ihyaabrar/lightgbm-hpo-shap-medication-adherence"
 date-released: 2026-10-08
-keywords: [LightGBM, hyperparameter optimization, SHAP, medication adherence, non-communicable disease]
+keywords: [LightGBM, hyperparameter optimization, SHAP, explainable AI, medication adherence, non-communicable disease]
 preferred-citation:
   type: thesis
-  title: "Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular"
+  title: "Perbandingan Metode Optimasi Hiperparameter dan Interpretasi SHAP pada LightGBM untuk Prediksi Kepatuhan Pengobatan Pasien Penyakit Tidak Menular [Comparison of Hyperparameter Optimization Methods and SHAP Interpretation of LightGBM for Medication Adherence Prediction in Non-Communicable Disease Patients]"
   authors:
     - family-names: "Abrar"
       given-names: "Ihya' Nashirudin"
   institution:
     name: "Universitas Ahmad Dahlan"
     city: "Yogyakarta"
+    country: "ID"
   year: 2026
-  thesis-type: "Tesis Magister Informatika"
+  thesis-type: "Master's thesis"
